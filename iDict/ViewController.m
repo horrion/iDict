@@ -24,4 +24,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)searchButtonAction:(id)sender{
+    NSString *textFieldString = _dictionaryTextField.text;
+    
+    UIReferenceLibraryViewController *referenceVC = [[UIReferenceLibraryViewController alloc] initWithTerm:textFieldString];
+    [self presentViewController:referenceVC animated:YES completion:nil];
+}
+
+-(IBAction)clearButtonAction:(id)sender{
+    _dictionaryTextField.text = @"";
+}
+
 @end

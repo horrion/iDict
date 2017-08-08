@@ -10,6 +10,12 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *dictionaryTextField;
+@property (strong, nonatomic) IBOutlet UIButton *searchButton;
+@property (strong, nonatomic) IBOutlet UIButton *clearButton;
+
+-(IBAction)searchButtonAction:(id)sender;
+-(IBAction)clearButtonAction:(id)sender;
 
 @end
 
